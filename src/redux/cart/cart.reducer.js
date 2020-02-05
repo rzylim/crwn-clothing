@@ -1,12 +1,9 @@
 import { CartActionTypes } from "./cart.types";
 import { addItemToCart, removeItemFromCart } from "./cart.utils";
 
-import SHOP_DATA from "../../pages/shop/shop.data";
-
 const INITIAL_STATE = {
   hidden: true,
-  // cartItems: [],
-  cartItems: [{ ...SHOP_DATA[0].items[0], quantity: 1 }]
+  cartItems: []
 };
 
 const cartReducer = (state = INITIAL_STATE, action) => {
